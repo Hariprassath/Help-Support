@@ -25,7 +25,7 @@ public class HelpAndSupportController{
     @PostMapping
     public String processRegister(@Valid HelpAndSupport help, Errors errors) {
         if (errors.hasErrors()) {
-            return "register";
+            return "helpandsupport";
         }
 
         return "redirect:/";
