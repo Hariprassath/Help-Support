@@ -14,18 +14,18 @@ import java.util.Arrays;
 import java.util.List;
 
 @Controller
-@RequestMapping("/helpandsupport")
+@RequestMapping("/HelpAndSupport")
 public class HelpAndSupportController{
 
             @GetMapping
             public String show_register(Model model){
-                model.addAttribute("help",new HelpAndSupport());
-                return "helpandsupport";
+                model.addAttribute("HelpAndSupport",new HelpAndSupport());
+                return "HelpAndSupport";
             }
     @PostMapping
     public String processRegister(@Valid HelpAndSupport help, Errors errors) {
         if (errors.hasErrors()) {
-            return "helpandsupport";
+            return "HelpAndSupport";
         }
 
         return "redirect:/";

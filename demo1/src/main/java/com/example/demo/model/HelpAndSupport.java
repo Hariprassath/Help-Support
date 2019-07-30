@@ -15,13 +15,13 @@ public class HelpAndSupport {
 
     @NotBlank
     @Size(min = 2,message = "Atleast 2 characters")
-    private String full_name;
+    private  String username;
     @NotBlank
     @Digits(integer=10,message="Invalid no", fraction = 0)
     private String mobile_no;
     @NotBlank
     @Size(min = 3,message = "Invalid email")
-    private String email_address;
+    private String email;
     @NotBlank
     @Size(min = 5,message = "Must be minimum 5 characters")
     private String message;
